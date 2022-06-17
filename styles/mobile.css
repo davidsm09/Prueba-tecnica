@@ -1,0 +1,353 @@
+/* Header */
+header {
+    padding-top: 20px;
+    margin-bottom: 15px;
+}
+
+/* Navbar*/
+
+.navbar img {
+    width: 170px;
+}
+
+.navbar-menu{
+    display: none;
+}
+
+.social-menu{
+    display: none;
+}
+
+.menu-hamburguesa-logo {
+    display: block;
+    margin-top: 10px;
+}
+
+
+/* Main Slider */
+.itemCarrouselTarjeta {
+    padding-right: 0 auto;
+    align-items: center;
+    justify-content: center;
+}
+.title-item-carrusel {
+    position: absolute;
+    z-index: 1;
+    text-align: center;
+    height: 350px;
+    width:220px;
+    left: 20%;
+}
+.title-item-carrusel h1 {
+    font-weight: 900;
+    line-height: 38px;
+    margin-bottom: 30px;
+    font-size: 27px;
+}
+
+.title-item-carrusel p {
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 30px;
+    
+}
+.title-item-carrusel a {
+    font-size: 20px;
+}
+
+/* Section 2 Card1*/
+
+#row-2 {
+    margin-top: 40px;
+}
+
+.botones-section-row2 {
+    padding: auto auto;
+    width: 100%;
+    overflow:hidden;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+    margin-bottom: 40px;
+    place-items: center;
+}
+
+.card1-section2 {
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    height: 130px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.img-container-s2 {
+    width: 50px;
+    height: 50px;
+    padding-top: 12px;
+    padding-left: 11px;
+}
+
+.card1-section2 img {
+    width: 27px;
+}
+.card1-section2 p {
+    text-align: center;
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+/* Section 2 Card2*/
+
+.section2-noticias {
+    width: 100%;
+    text-align: center;
+    padding: 0 auto;
+}
+
+.section2-noticias p {
+    font-size: 18px;
+}
+
+.wrapper-container {
+    padding-left: 12%;
+}
+.wrapper{
+    width: 100%;
+    padding: 0 auto;
+  }
+
+  @media (max-width: 400px) {
+    .wrapper {
+        padding: 0;
+    }
+  }
+   .carousel{
+    width: 100%;
+    margin: auto;
+    padding: 0;
+  }
+  .card{
+    color: #fff;
+    text-align: center;
+    width: 220px !important;
+  }
+
+  .info-content {
+    width: 260px;
+    margin-left: -25px;
+    text-align: center;
+  }
+  .info-content p {
+    font-size: 15px;
+    text-align: center;
+  }
+  .card img {
+    width: 100px;
+    height: 250px;
+  }
+
+
+  .enlaces-noticias {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin-bottom: 50px;
+    align-items: center;
+  }
+  .economy-button{
+    width: 300px;
+    height: 40px;
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+  .economy-button img {
+    width: 15px;
+  }
+
+  .label-button {
+    width: 270px;
+    height: 45px;
+    font-size: 15px;
+  }
+  .label-button img {
+    width: 15px;
+  }
+
+  /* Section 3*/
+
+  .title-container-s3 {
+    text-align: center;
+    padding-top: 50px;
+  }
+  .title-container-s3 h2 {
+    margin-bottom: 20px;
+  }
+  .title-container-s3 p {
+    font-size: 15px;
+  }
+
+  .icons-container-s3 {
+    padding-top: 50px;
+    padding-left: 25%;
+  }
+  .icons-list-s3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px 40px;
+    place-items: start;
+  }
+  .icons-list-s3 li a {
+    font-size: 12px;
+    font-weight: 700;
+    text-align: center;
+  }
+
+  .icons-list-s3 li a i {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  .card3-s3 {
+    width: 100%;
+    height: auto;
+    margin: 30px auto 40px auto; 
+    border-radius: 30px;
+    padding: 40px 0;
+  }
+  .card3-s3 h2 {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 900;
+  }
+
+  .ahorros-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 auto;
+    font-size: 15px;
+    text-align: center;
+    margin-top: 0px;
+  }
+  .ahorros-left {
+    margin-top: 0;
+    padding: 5px auto;
+  }
+
+  @media (max-width: 400px) {
+    .left-content {
+        display: block;
+    }
+  }
+  .left-content img {
+    margin-right: 20px;
+    width: 120px;
+  }
+
+  .ahorros-right {
+    padding-top: 50px;
+    width: 100%;
+  }
+  .ahorros-right img {
+    width: 100%;
+    border-radius: 20px;
+    margin: 0;
+  }
+  .mini-card {
+    display: flex;
+    width: 135px;
+    height: 80px;
+    align-items: center;
+    text-align: center;
+    padding-top: 13px ;
+    font-size: 12px;
+    cursor: pointer;
+  }
+  .mini-card img {
+    width: 50px;
+    margin-bottom: 20px;
+    margin-right: 30px;
+  }
+
+  .cards-menu-s3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 0;
+    padding: 0;
+  }
+  .cards-menu-s3 div {
+    background-image: url(/assets/fondocardss3.jpg);
+    background-size: cover;
+    width: 270px;
+    height: 90px;
+    border-radius: 20px;
+    padding: 0 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    margin-bottom: 30px;
+  }
+
+  .cards-menu-s3 div p {
+    font-size: 17px;
+  }
+
+  /* Footer */
+
+  footer {
+    padding: 0;
+  }
+
+  .img-footer {
+    display: none;
+  }
+
+  .contacto-footer {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+  }
+  .contacto-footer h3 {
+    font-size: 13px;
+  }
+  .contacto-footer p {
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+.menu-footer{
+    display: flex;
+}
+.menu-footer li a img {
+    width: 35px;
+}
+
+.list-end {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #eaeaea;
+    padding: 10px 0;
+    font-size: 14px;
+}
+.list-end li {
+    display: flex;
+    cursor: pointer;
+}
+.list-end li i{
+    margin-top: 3px;
+    color: #94999b;
+}
+.list-end li p {
+    font-weight: 700;
+}
+
