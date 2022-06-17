@@ -49,6 +49,19 @@ header {
     font-weight: 500;
     transition: ease-in .1s;
 }
+.menu-hamburguesa-logo {
+  display: none;
+}
+
+.bars-navbar-menu{
+  border: none;
+  background-color: var(--white);
+  padding-bottom: 12px;
+}
+.bars-navbar-menu i {
+  font-size: 27px;
+  color: var(--green-color);
+}
 .social-menu{
     display: flex;
 }
@@ -387,7 +400,7 @@ header {
   .icons-container-s3 {
     padding-top: 50px;
     padding-left: 110px;
-    padding-right: 110px
+    padding-right: 110px;
   }
   .icons-list-s3 {
     display: flex;

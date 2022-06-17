@@ -1,5 +1,5 @@
 $(".carousel").owlCarousel({
-    margin: 20,
+    margin: 0,
     loop: true,
     autoplay: true,
     autoplayTimeout: 2000,
