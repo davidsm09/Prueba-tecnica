@@ -9,6 +9,11 @@
     --black: #000000;
     --white: #ffffff;
 }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 body {
     font-family: 'Roboto', sans-serif !important; 
@@ -19,167 +24,123 @@ ul {
 }
 
 /* Header */
-header {
-    padding-top: 20px;
-    margin-bottom: 15px;
+.header{
+  width:100%;
+  background-color: var(--white);
+  padding: 1.5em 1em;
+  justify-content: space-between;
+
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  
+  color:white;
 }
 
-/* Navbar*/
-
-.navbar{
-    padding: 25px;
-    z-index: 2;
-}
-
-.navbar-menu{
-    display: flex;
-}
-.navbar-menu li {
-    margin-left: 40px;
-}
-.navbar-menu  a {
-    text-decoration: none ;
-    color: var(--gray-color);
-    font-weight: 500;
-    
-}
-.navbar-menu  a:hover {
-    text-decoration: underline 3px var(--orange-color);
-    color: var(--gray-color);
-    font-weight: 500;
-    transition: ease-in .1s;
-}
-.menu-hamburguesa-logo {
+.header .button{
   display: none;
 }
-
-.bars-navbar-menu{
-  border: none;
-  background-color: var(--white);
-  padding-bottom: 12px;
-}
-.bars-navbar-menu i {
-  font-size: 27px;
-  color: var(--green-color);
-}
-.social-menu{
-    display: flex;
-}
-.social-menu li a img {
-    width: 32px;
+.header .svg{
+  width:2em;
+  height:2em;
+  fill: var(--green-color);
 }
 
+.header .ul{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+  align-items: center;
+  
+}
+.ul {
+  margin-right: 50px;
+}
+.header {
+  margin: 0 auto;
+}
+
+.li {
+  margin: 0 20px;
+}
+
+.a {
+  text-decoration: none;
+  color: var(--gray-color);
+}
+
+.a:hover {
+  color: var(--gray-color);
+  text-decoration: underline 3px var(--orange-color);
+}
+
+.social-menu {
+  display: flex;
+  flex-flow: row nowrap;
+}
 .social-menu li {
-    margin-right: 15px;
+  margin-right: 20px;
+}
+.social-menu img {
+  width: 40px;
+  opacity: .7;
+}
+.social-menu img:hover {
+  opacity: 1;
 }
 
-/* Main Slider */
-
-.itemCarrousel img {
-    width: 100%;
-    height: 500px;
-    object-fit: cover;
-    position: relative;
-    opacity: 0.6;
+/* Slider */
+.container-slider {
+  width: 100%;
+  max-width: 1500px;
+  overflow: hidden;
+  margin: 20px auto;
+  position: relative;
 }
 
-.carrousel{
-    width: 100%;
+.slider {
+  height: 500px;
+  width: 300%;
+  display: flex;
+  margin-left: -100%;
 }
 
-.conteCarrousel{
-    width: 100%;
-    height: 200px;
-    overflow: hidden;
+.slider-section {
+  width: 100%;
 }
 
-
-.itemCarrouselTarjeta{
-    width: 100%;
-    height: 100%;
+.slider-img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-.title-item-carrusel {
-    position: absolute;
-    top: 205px;
-    bottom: 0;
-    left: 200px;
-    right: 0;
-    z-index: 1;
-}
-.title-item-carrusel h1 {
-    font-weight: 900;
-    line-height: 38px;
-    margin-bottom: 30px;
-    font-size: 45px;
-}
-.title-item-carrusel h1 span {
-    color: var(--orange-color);
-}
-.title-item-carrusel p {
-    font-size: 22px;
-    font-weight: 500;
-    margin-bottom: 30px;
-    
-}
-.title-item-carrusel a {
-    text-decoration: none;
-    font-weight: 900;
-    color: var(--orange-color);
-    font-size: 25px;
-}
-.title-item-carrusel a:hover {
-    text-decoration: none;
-    font-weight: 900;
-    color: var(--orange-color);
-    font-size: 25px;
+.slider-btn {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-color: var(--white);
+  opacity: .6;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 28px;
+  text-align: center;
+  border-radius: 50%;
+  cursor: pointer;
 }
 
-.itemCarrouselArrows{
-    position: absolute;
-    height: 100%;
-    width: 100%; 
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px; 
-    bottom: 0;
-    top: 30px;
-    z-index: 0;
+.slider-btn:hover {
+  opacity: 1;
 }
 
-
-.itemCarrouselArrows > i:hover {
-    cursor: pointer;
+.slider-btn-right {
+  right: 10px;
+}
+.slider-btn-left{
+  left: 10px;
 }
 
-#itemCarrousel-1{
-    background-color: var(--white);
-}
-
-
-
-.conteCarrouselController{
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.conteCarrouselController > a{
-    text-decoration: none;
-    font-size: 2em;
-    color: grey;
-}
-
-.itemCarrouselArrows > a > i{
-    color: var(--gray-color);
-    background-color: var(--white);
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    text-align: center;
-    padding-top: 12px;
-}
 
 /* Section 2 Card1*/
 
