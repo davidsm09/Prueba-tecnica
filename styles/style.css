@@ -29,7 +29,7 @@ ul {
   background-color: var(--white);
   padding: 1.5em 1em;
   justify-content: space-between;
-
+  
   display: flex;
   flex-flow: row wrap;
   align-items: center;
@@ -94,8 +94,9 @@ ul {
   width: 100%;
   max-width: 1500px;
   overflow: hidden;
-  margin: 20px auto;
+  margin: 0 auto;
   position: relative;
+  margin-bottom: 70px;
 }
 
 .slider {
