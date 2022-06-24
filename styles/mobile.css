@@ -5,65 +5,70 @@
   --black: #000000;
   --white: #ffffff;
 }
-
-/* Header */
-
-.header{
-  width:100%;
-  padding: 1em 1em;
-
+body {
+  overflow-x: hidden;
 }
 
-  .header .button{
-    display: block;
-    cursor: pointer;
-  }
-  .button {
-    border: none;
-    background-color: #fff;
-  }
+/* Header Nav Bar*/
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 20px 0px 20px;
+  width: 100%;
+}
+.logo-menu {
+  width: 230px;
+}
+.boton-menu {
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+}
+.menu, .submenu {
+  margin: 0;
+  padding: 0;
+}
 
-  .header .nav{
-    width:100%;
-    display: none;
-    height:0;
-    pointer-events: none;
-    overflow: hidden;
-    transition: all .5s ease;
-
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
-  }
-  .header img {
-    width: 230px;
-  }
-  .header .nav.activo{
-    display: block;
-    height:38vh;
-    pointer-events: auto;
-  }
-  .header .ul{
-    flex-direction: column;
-    margin: auto;
-  }
-  .header {
-    margin: 1rem 0;
-  }
-
-  .li {
-    margin: 10px auto;
-  }
-
-  .a {
-    color: var(--orange-color);
-    font-size: 1.1rem;
-  }
-
-  .social-menu {
-    display: none;
-  }
+.menu {
+  width: 100%;
+  margin-left: -100%;
+  display: block;
+  position: absolute;
+  
+}
+.mostrar {
+  margin-left: 0;
+  position: relative;
+  transition: all.4s;
+}
+.menu-link {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: var(--gray-color);
+  border-bottom: solid 1px #e9e9e9;
+}
+.submenu {
+  height: 0;
+  overflow: hidden;
+  transition: all .3s;
+}
+.submenu {
+  height: 0;
+  overflow: visible;
+  transition: all .3s;
+}
+.submenu .menu-link{
+  background-color: #ffc49d;
+  padding-left: 50px;
+}
+.logo-nav {
+  display: none;
+}
+.menu-social_media {
+  display: none;
+}
 
 
 
@@ -115,21 +120,18 @@
 }
 
 .botones-section-row2 {
-    padding: auto auto;
-    width: 100%;
-    overflow:hidden;
-    height: auto;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
-    margin-bottom: 40px;
-    place-items: center;
+   display: flex;
+   overflow-x: auto;
+   height: 140px;
+   margin-top: 50px;
+   margin-bottom: 30px;
 }
 
 .card1-section2 {
     display: flex;
     flex-direction: column;
-    width: 100px;
-    height: 130px;
+    min-width: 130px;
+    height: 120px;
     align-items: center;
     justify-content: center;
     cursor: pointer;
@@ -139,16 +141,16 @@
     width: 50px;
     height: 50px;
     padding-top: 12px;
-    padding-left: 11px;
+    padding-left: 2px;
 }
 
 .card1-section2 img {
-    width: 27px;
+    width: 50px;
 }
 .card1-section2 p {
     text-align: center;
-    font-size: 15px;
-    margin-top: 10px;
+    font-size: 14px;
+    margin-top: 20px;
 }
 
 /* Section 2 Card2*/
@@ -164,11 +166,15 @@
 }
 
 .wrapper-container {
-    padding-left: 12%;
+    padding-left: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .wrapper{
     width: 100%;
     padding: 0 auto;
+    padding-left: 10%;
   }
 
   @media (max-width: 400px) {
@@ -241,88 +247,92 @@
     font-size: 15px;
   }
 
-  .icons-container-s3 {
-    padding-top: 50px;
-    padding-left: 25%;
-  }
-  .icons-list-s3 {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 10px 40px;
-    place-items: start;
-  }
-  .icons-list-s3 li a {
-    font-size: 12px;
-    font-weight: 700;
-    text-align: center;
-  }
-
-  .icons-list-s3 li a i {
-    font-size: 20px;
-    text-align: center;
-    margin-bottom: 15px;
-  }
-
-  .card3-s3 {
+  .container{
+    margin: 40px auto -70px auto;
     width: 100%;
-    height: auto;
-    margin: 30px auto 40px auto; 
-    border-radius: 30px;
-    padding: 40px 0;
   }
-  .card3-s3 h2 {
-    text-align: center;
-    font-size: 25px;
-    font-weight: 900;
+  .header {
+    display: flex;
+    justify-content: center;
+    overflow-x: auto;
+    width: 100%;
+    padding-left: 80px;
+  }
+  .btn{
+    border: none;
+    min-width: 70px;
+    cursor: pointer;
+    height: 100px;
+  }
+  .btn:focus{
+    background-color: #fd7215;
+  }
+  .btn p {
+    color: #fff;
+    font-size: 10px;
+    font-weight: 700;
+    margin-top: 10px;
+  }
+  .btn img {
+    width: 25px;
+  }
+  .content {
+    width: 100%;
+    position: relative;
+    height: 700px;
+  }
+  .content_text {
+    width: 100%;
+    position: absolute;
+    transform: scale(0);
+    transition: .4s;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 15px;
+    left: 0;
+    right: 0;
+    align-items: center;
   }
 
-  .ahorros-container {
+  .servicios-content {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 0 auto;
-    font-size: 15px;
-    text-align: center;
-    margin-top: 0px;
+    margin-top: 50px;
   }
-  .ahorros-left {
-    margin-top: 0;
-    padding: 5px auto;
+  .content-right img {
+    width: 260px;
+    margin: 30px;
   }
-
-  @media (max-width: 400px) {
-    .left-content {
-        display: block;
-    }
-  }
-  .left-content img {
-    margin-right: 20px;
-    width: 120px;
+  .mini-card{
+   display: none;
   }
 
-  .ahorros-right {
-    padding-top: 50px;
+  .content-left {
     width: 100%;
+    font-size: 13px;
   }
-  .ahorros-right img {
-    width: 100%;
-    border-radius: 20px;
-    margin: 0;
-  }
-  .mini-card {
+  .left-inside {
     display: flex;
-    width: 135px;
-    height: 80px;
     align-items: center;
-    text-align: center;
-    padding-top: 13px ;
-    font-size: 12px;
-    cursor: pointer;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    margin-top: 20px;
   }
-  .mini-card img {
-    width: 50px;
-    margin-bottom: 20px;
+  .left-inside img {
+    width: 100px;
     margin-right: 30px;
+  }
+  .title{
+    margin: 0;
+    text-align: center;
+    color: var(--green-color);
+    font-weight: 900;
+    font-size: 25px;
+  }
+  .block{
+    transform: scale(1);
+    z-index: 1;
   }
 
   .cards-menu-s3 {
@@ -332,10 +342,9 @@
     justify-content: space-evenly;
     margin-bottom: 0;
     padding: 0;
+    margin-top: 50px;
   }
   .cards-menu-s3 div {
-    background-image: url(/assets/fondocardss3.jpg);
-    background-size: cover;
     width: 270px;
     height: 90px;
     border-radius: 20px;
@@ -359,6 +368,17 @@
   }
 
   .img-footer {
+    display: flex;
+    flex-direction: column;
+    height: max-content;
+    align-items: center;
+    padding-top: 20px;
+  }
+  .img-footer img {
+    width: 170px;
+    height: 60px;
+  }
+  .img-footer img:nth-child(3){
     display: none;
   }
 

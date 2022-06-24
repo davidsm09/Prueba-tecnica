@@ -1,11 +1,23 @@
+const btnMenu = document.querySelector("#bnt-menu");
+const menu = document.querySelector("#menu");
+
+btnMenu.addEventListener("click", function(){
+    menu.classList.toggle("mostrar")
+});
 
 
-/* Cuando hago CLICK .button, .nav TOGGLE 'activo' */
-const button = document.querySelector('.button')
-const nav    = document.querySelector('.nav')
 
-button.addEventListener('click',()=>{
-    nav.classList.toggle('activo')
-})
+
+
+
+
+
+
+
+
+
+
+
+
 
 

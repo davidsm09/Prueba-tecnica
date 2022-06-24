@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="/styles/style.css">
-    <link rel="stylesheet" media="screen and (max-width:760px)" href="/styles/mobile.css">
+    <link rel="stylesheet" media="screen and (max-width:800px)" href="/styles/mobile.css">
+    <link rel="stylesheet" href="/styles/whats.css">
+    <link rel="stylesheet" href="/styles/whats2.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,8 +22,7 @@
 
     
   <!--Boton Flotante  -->
-    <link rel="stylesheet" href="/styles/whats.css">
-    <link rel="stylesheet" href="/styles/whats2.css">
+   
     <div class="nav-bottom">
                 <div class="popup-whatsapp fadeIn">
                     <div class="content-whatsapp -top"><button type="button" class="closePopup">
@@ -46,35 +47,70 @@
                 </button>
                 <div class="circle-anime"></div>
             </div>
-            <script  src="script2.js"></script>
+           
 <!--Todo el documento esta enlazado a boostrap pero solo lo use en algunos Items-->
 
 
-    <header class="header">
-        <img src="/assets/logo.png" alt="">
-
-
-        <!--Barra de navegacion-->
-        <button class="button">
-        <svg class="svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
-            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
-            </svg>
-        </button>
-
-        <nav class="nav">
-            <ul class="ul">
-                <li class="li"><a href="#" class="a">Inicio</a></li>
-                <li class="li"><a href="#" class="a">Corporativo</a></li>
-                <li class="li"><a href="#" class="a">Portafolio</a></li>
-                <li class="li"><a href="#" class="a">Publicaciones</a></li>
-                <li class="li"><a href="#" class="a">Oficinas</a></li>
-                <li class="li"><a href="#" class="a">Contactenos</a></li>
-            </ul>
-            
-        <ul class="social-menu">
+    <header >
+        
+      <span class="nav-bar">
+        <img src="/assets/logo.png" alt="logo" class="logo-menu">
+        <img src="/assets/items-pruebas/menu.svg" alt="menu img" id="bnt-menu" class="boton-menu">
+      </span>
+      <nav class="main-nav">
+        <img src="/assets/logo.png" alt="logo" class="logo-nav">
+        <ul class="menu" id="menu">
+            <li class="menu-item">
+                <a href="#" class="menu-link">Inicio</a>
+            </li>
+            <li class="menu-item container-submenu">
+                <a href="#" class="menu-link submenu-btn">Corporativo <i class="fa-solid fa-angle-down"></i></a>
+                <ul class="submenu">
+                    <li class="menu-item">
+                        <a href="#" class="menu-link">Sobre la entidad</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#" class="menu-link">Reseña Historica</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#" class="menu-link">Mision y Vision</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#" class="menu-link">Nuestra gestion</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="menu-item container-submenu">
+                <a href="#" class="menu-link submenu-btn">Portafolio <i class="fa-solid fa-angle-down"></i></a>
+                <ul class="submenu">
+                    <li class="menu-item">
+                        <a href="#" class="menu-link">Ahorros</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#" class="menu-link">Creditos</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#" class="menu-link">Giros</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#" class="menu-link">Convenios</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="menu-item">
+                <a href="#" class="menu-link">Publicaciones</a>
+            </li>
+            <li class="menu-item">
+                <a href="#" class="menu-link">Oficinas</a>
+            </li>
+            <li class="menu-item">
+                <a href="#" class="menu-link">Contactenos</a>
+            </li>
+        </ul>
+        <ul class="menu-social_media">
             <li>
                 <a href="#">
-                    <img src="/assets/search.png" alt="search logo">
+                    <img src="/assets/search.png" alt="logo facebook">
                 </a>
             </li>
             <li>
@@ -84,27 +120,22 @@
             </li>
             <li>
                 <a href="#">
-                    <img src="/assets/twitter.png" alt="logo Twitter">
+                    <img src="/assets/twitter.png" alt="">
                 </a>
             </li>
             <li>
                 <a href="#">
-                    <img src="/assets/instagram.png" alt="logo instagram">
+                    <img src="/assets/instagram.png" alt="">
                 </a>
             </li>
             <li>
                 <a href="#">
-                    <img src="/assets/youtube.png" alt="logo youtube">
+                    <img src="/assets/youtube.png" alt="">
                 </a>
             </li>
-        </ul>
-        </nav>
+        </ul>   
+      </nav>
     </header>
-        
-        
-
-    
-
 
 <!--Slider principal  -->
     <main>
@@ -132,49 +163,49 @@
             <div class="botones-section-row2">
                 <div class="card1-section2">
                     <div class="img-container-s2">
-                        <img src="/assets/icons/interactions.png" alt="icon">
+                        <img src="/assets/items-pruebas/icono-destacados01.png" alt="icon">
                     </div>
                     <p>Portal<br>Transaccional</p>
                 </div>
                 <div class="card1-section2">
                     <div class="img-container-s2">
-                        <img src="/assets/icons/desktop.png" alt="icon">
+                        <img src="/assets/items-pruebas/icono-destacados02.png" alt="icon">
                     </div>
                     <p>Sucursal<br>Virtual</p>
                 </div>
                 <div class="card1-section2">
                     <div class="img-container-s2">
-                        <img src="/assets/icons/credit.png" alt="icon">
+                        <img src="/assets/items-pruebas/icono-destacados03.png" alt="icon">
                     </div>
                     <p>Credito<br>en Linea</p>
                 </div>
                 <div class="card1-section2">
                     <div class="img-container-s2">
-                        <img src="/assets/icons/budget.png" alt="icon">
+                        <img src="/assets/items-pruebas/icono-destacados04.png" alt="icon">
                     </div>
                     <p>Simulador<br>de Ahorro</p>
                 </div>
                 <div class="card1-section2">
                     <div class="img-container-s2">
-                        <img src="/assets/icons/credit-card.png" alt="icon">
+                        <img src="/assets/items-pruebas/icono-destacados05.png" alt="icon">
                     </div>
                     <p>Simulador<br>de Cretido</p>
                 </div>
                 <div class="card1-section2">
                     <div class="img-container-s2">
-                        <img src="/assets/icons/map.png" alt="icon">
+                        <img src="/assets/items-pruebas/icono-destacados06.png" alt="icon">
                     </div>
                     <p>Red de<br>Aliados</p>
                 </div>
                 <div class="card1-section2">
                     <div class="img-container-s2">
-                        <img src="/assets/icons/id-card.png" alt="icon">
+                        <img src="/assets/items-pruebas/icono-destacados07.png" alt="icon">
                     </div>
                     <p>¿Como<br>asociarme?</p>
                 </div>
                 <div class="card1-section2">
                     <div class="img-container-s2">
-                        <img src="/assets/icons/phone-call.png" alt="icon">
+                        <img src="/assets/items-pruebas/icono-destacados08.png" alt="icon">
                     </div>
                     <p>Formulario<br>PQRSF</p>
                 </div>
@@ -257,91 +288,203 @@
                     </button>
                 </div>
             </div>
+    
+<!--Seccion 3 panel tipo pestaña-->
+
             <div class="section-3">
                <div class="title-container-s3">
                 <h2>Nuestros Servicios</h2>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi voluptas harum eius obcaecati. <br>
                     Excepturi voluptas harum eius obcaecati</p>
                </div>
-                <div class="icons-container-s3">
-                    <ul class="icons-list-s3">
-                        <li>
-                            <a href="#">
-                                <i class="fa-solid fa-piggy-bank"></i>
-                                AHORROS
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <i class="fa-solid fa-credit-card"></i>
-                                CREDITOS
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <i class="fa-solid fa-earth-americas"></i>
-                                GIROS RED CONECTA
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <i class="fa-solid fa-handshake"></i>
-                                CONVENIOS
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <i class="fa-solid fa-computer"></i>
-                                SERVICIOS EN LINEA
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <i class="fa-solid fa-map-location-dot"></i>
-                                RED OFICINAS
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                  <!--card final seccion 3 -->
-                <div class="card3-s3">
-                    <h2>AHORROS</h2>
-                    <div class="ahorros-container">
-                        <div class="ahorros-left">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
-                                Dolore cumque ut ipsa cum autem cupiditate voluptatibus <br>
-                                aspernatur quia assumenda sunt architecto saepe similique <br>
-                                delectus, atque reprehenderit optio quisquam beatae.</p>
-                            <div class="left-content">
-                                <img src="/assets/seguro-aliado.png" alt="imagen seguro">
-                                <p>Invierta sus ahorros en opciones <br>
-                                    solidas, rentables y seguras.
-                                </p>
+               <div class="container" id="container">
+                    <div class="header">
+                        <button class="btn" data-number="1">
+                            <img src="/assets/items-pruebas/icono-servicios01.png" alt="">
+                            <p>AHORROS</p>
+                        </button>
+                        <button class="btn" data-number="2">
+                            <img src="/assets/items-pruebas/icono-servicios02.png" alt="">
+                            <p>CREDITOS</p>
+                        </button>
+                        <button class="btn" data-number="3">
+                            <img src="/assets/items-pruebas/icono-servicios03.png" alt="">
+                            <p>GIROS</p>
+                        </button>
+                        <button class="btn" data-number="4">
+                            <img src="/assets/items-pruebas/icono-servicios04.png" alt="">
+                            <p>CONVENIOS</p>
+                        </button>
+                        <button class="btn" data-number="5">
+                            <img src="/assets/items-pruebas/icono-servicios05.png" alt="">
+                            <p>SERVICIOS</p>
+                        </button>
+                        <button class="btn" data-number="6">
+                            <img src="/assets/items-pruebas/icono-servicios06.png" alt="">
+                            <p>OFICINAS</p>
+                        </button>
+                    </div>
+                    <div class="content">
+                        <div class="content_text block" data-seccion="1">
+                            <h2 class="title">AHORROS</h2>
+                            <div class="servicios-content">
+                                <div class="content-left">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                        Ut facere ullam eius. Qui, a eum? Dolorem culpa adipisci nisi debitis ab. 
+                                        Iure est, qui nesciunt ducimus 
+                                        reprehenderit architecto tempore tempora?</p>
+                                    <div class="left-inside">
+                                        <img src="/assets/items-pruebas/footer-fogacoop.png" alt="">
+                                        <p>Invierta sus ahorros en opciones solidad, rentables y seguras</p>
+                                    </div>
+                                    <p><span>↗</span> Condiciones de manejo de cuentas de Ahorro</p>
+                                    <p><span>↗</span> Conosca nuestros canales Transaccionales</p>
+                                </div>
+                                <div class="content-right">
+                                    <div class="mini-card">
+                                        <img src="/assets/icons/green-cards.png" width="50px" alt="">
+                                        <p>Aportes <br>Sociales</p>
+                                    </div>
+                                    <img src="/assets/items-pruebas/forma-ahorro.png" alt="">
+                                </div>
                             </div>
-                            <p><span>◥</span>  Condiciones de manejo de cuentas de ahorro</p>
-                            <p><span>◥</span>  Conozaca nuestros canales Transaccionales</p>
+                          
                         </div>
-                        <div class="ahorros-right">
-                            <div class="mini-card">
-                                <img src="/assets/icons/green-cards.png" alt="icon img" width="60px">
-                                <p>Aportes<br>Sociales</p>
+                        <div class="content_text" data-seccion="2">
+                            <h2 class="title">CREDITOS</h2>
+                            <div class="servicios-content">
+                                <div class="content-left">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                        Ut facere ullam eius. Qui, a eum? Dolorem culpa adipisci nisi debitis ab. 
+                                        Iure est, qui nesciunt ducimus 
+                                        reprehenderit architecto tempore tempora?</p>
+                                    <div class="left-inside">
+                                        <img src="/assets/items-pruebas/footer-fogacoop.png" alt="">
+                                        <p>Invierta sus ahorros en opciones solidad, rentables y seguras</p>
+                                    </div>
+                                    <p><span>↗</span> Condiciones de manejo de cuentas de Ahorro</p>
+                                    <p><span>↗</span> Conosca nuestros canales Transaccionales</p>
+                                </div>
+                                <div class="content-right">
+                                    <div class="mini-card">
+                                        <img src="/assets/icons/green-cards.png" width="50px" alt="">
+                                        <p>Aportes <br>Sociales</p>
+                                    </div>
+                                    <img src="/assets/items-pruebas/forma-credito.png" alt="">
+                                </div>
                             </div>
-                            <img src="/assets/img section2 card.jpg" alt="imagen">
+                        </div>
+                        <div class="content_text" data-seccion="3">
+                            <h2 class="title">GIROS RED CONECTA</h2>
+                            <div class="servicios-content">
+                                <div class="content-left">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                        Ut facere ullam eius. Qui, a eum? Dolorem culpa adipisci nisi debitis ab. 
+                                        Iure est, qui nesciunt ducimus 
+                                        reprehenderit architecto tempore tempora?</p>
+                                    <div class="left-inside">
+                                        <img src="/assets/items-pruebas/footer-fogacoop.png" alt="">
+                                        <p>Invierta sus ahorros en opciones solidad, rentables y seguras</p>
+                                    </div>
+                                    <p><span>↗</span> Condiciones de manejo de cuentas de Ahorro</p>
+                                    <p><span>↗</span> Conosca nuestros canales Transaccionales</p>
+                                </div>
+                                <div class="content-right">
+                                    <div class="mini-card">
+                                        <img src="/assets/icons/green-cards.png" width="50px" alt="">
+                                        <p>Aportes <br>Sociales</p>
+                                    </div>
+                                    <img src="/assets/items-pruebas/forma-giros.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content_text" data-seccion="4">
+                            <h2 class="title">CONVENIOS</h2>
+                            <div class="servicios-content">
+                                <div class="content-left">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                        Ut facere ullam eius. Qui, a eum? Dolorem culpa adipisci nisi debitis ab. 
+                                        Iure est, qui nesciunt ducimus 
+                                        reprehenderit architecto tempore tempora?</p>
+                                    <div class="left-inside">
+                                        <img src="/assets/items-pruebas/footer-fogacoop.png" alt="">
+                                        <p>Invierta sus ahorros en opciones solidad, rentables y seguras</p>
+                                    </div>
+                                    <p><span>↗</span> Condiciones de manejo de cuentas de Ahorro</p>
+                                    <p><span>↗</span> Conosca nuestros canales Transaccionales</p>
+                                </div>
+                                <div class="content-right">
+                                    <div class="mini-card">
+                                        <img src="/assets/icons/green-cards.png" width="50px" alt="">
+                                        <p>Aportes <br>Sociales</p>
+                                    </div>
+                                    <img src="/assets/items-pruebas/forma-convenios.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content_text" data-seccion="5">
+                            <h2 class="title">SERVICIOS EN LINEA</h2>
+                            <div class="servicios-content">
+                                <div class="content-left">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                        Ut facere ullam eius. Qui, a eum? Dolorem culpa adipisci nisi debitis ab. 
+                                        Iure est, qui nesciunt ducimus 
+                                        reprehenderit architecto tempore tempora?</p>
+                                    <div class="left-inside">
+                                        <img src="/assets/items-pruebas/footer-fogacoop.png" alt="">
+                                        <p>Invierta sus ahorros en opciones solidad, rentables y seguras</p>
+                                    </div>
+                                    <p><span>↗</span> Condiciones de manejo de cuentas de Ahorro</p>
+                                    <p><span>↗</span> Conosca nuestros canales Transaccionales</p>
+                                </div>
+                                <div class="content-right">
+                                    <div class="mini-card">
+                                        <img src="/assets/icons/green-cards.png" width="50px" alt="">
+                                        <p>Aportes <br>Sociales</p>
+                                    </div>
+                                    <img src="/assets/items-pruebas/forma-servicios.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content_text" data-seccion="6">
+                            <h2 class="title">RED OFICINAS</h2>
+                            <div class="servicios-content">
+                                <div class="content-left">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                        Ut facere ullam eius. Qui, a eum? Dolorem culpa adipisci nisi debitis ab. 
+                                        Iure est, qui nesciunt ducimus 
+                                        reprehenderit architecto tempore tempora?</p>
+                                    <div class="left-inside">
+                                        <img src="/assets/items-pruebas/footer-fogacoop.png" alt="">
+                                        <p>Invierta sus ahorros en opciones solidad, rentables y seguras</p>
+                                    </div>
+                                    <p><span>↗</span> Condiciones de manejo de cuentas de Ahorro</p>
+                                    <p><span>↗</span> Conosca nuestros canales Transaccionales</p>
+                                </div>
+                                <div class="content-right">
+                                    <div class="mini-card">
+                                        <img src="/assets/icons/green-cards.png" width="50px" alt="">
+                                        <p>Aportes <br>Sociales</p>
+                                    </div>
+                                    <img src="/assets/items-pruebas/forma-oficinas.png" alt="">
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-
+                  <!--card final seccion 3 -->
+            
               <!--Menu de cards final seccion 3-->
                 <div class="cards-menu-s3">
-                    <div>
+                    <div class="div-1">
                         <i class="fa-solid fa-head-side-virus"></i>
                         <p>Aprendamos de <br>Cooperativismo</p>
                     </div>
-                    <div>
+                    <div class="div-2">
                         <i class="fa-solid fa-shield"></i>
                         <p>Actualizacion Registro<br>Web DIAN</p>
                     </div>
-                    <div>
+                    <div class="div-3">
                         <i class="fa-solid fa-mobile-screen"></i>
                         <p>Instituto<br>Coomuldesa</p>
                     </div>
@@ -353,7 +496,12 @@
   <!--Footer-->
     <footer>
         <div class="img-footer">
-            <img src="/assets/aliados.jpg" alt="imagen">
+            <img src="/assets/items-pruebas/footer-value.jpg" alt="imagen">
+            <img src="/assets/items-pruebas/footer-supersolidaria.jpg" alt="imagen">
+            <img src="/assets/items-pruebas/footer-fogacoop.png" alt="imagen">
+            <img src="/assets/items-pruebas/footer-visionamos.jpg" alt="imagen">
+            <img src="/assets/items-pruebas/footer-redcoopcentral.jpg" alt="imagen">
+            <img src="/assets/items-pruebas/footer-atmcentral.jpg" alt="imagen">
         </div>
         <div class="contacto-footer">
             <img src="/assets/logo-footer.png" alt="logo footer">
@@ -417,8 +565,8 @@
     </footer>
 
 
-
-
+    <script src="/tabs.js"></script>
+    <script  src="script2.js"></script>
     <script src="/slider.js"></script>
     <script src="/app.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
